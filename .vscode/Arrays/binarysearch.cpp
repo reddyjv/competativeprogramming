@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int a[100],n,key,flag=0,k;
+    int a[100],n,key,flag=0,k=1;
  
     cout<<"enter number of elements"<<endl;
     cin>>n;
