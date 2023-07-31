@@ -37,5 +37,7 @@ int main()
     else{
          cout<<"key is not found"<<endl;
     }
+    cout<<"press 1 to continue or 0 to exit\n"<<endl;
+    cin>>k;
     }
 }
