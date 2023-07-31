@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int a[100],n,key,flag=0;
+    int a[100],n,key,flag=0,k;
  
     cout<<"enter number of elements"<<endl;
     cin>>n;
@@ -11,7 +11,7 @@ int main()
     {
         cin>>a[i];         //enter in ascending order
     }
-    while(1){
+    while(k==1){
       cout<<"enter key to be searched"<<endl;
     cin>>key;
     int start=0;
