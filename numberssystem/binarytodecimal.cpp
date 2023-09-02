@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 { int n,k=5,ans=0;
-    cout<<"enter binary binary number"<<endl;
+    cout<<"enter  binary number"<<endl;
     cin>>n;
   int  i=0;
     while(n!=0){
@@ -14,6 +14,11 @@ int main()
       n/=10;
       i++;
     }
-    cout<<"the decimal number is"<<ans<<endl;
+    cout<<"the decimal number is "<<ans<<endl;
 
 }
+/* output
+enter binary binary number
+1010
+the decimal number is10
+*/

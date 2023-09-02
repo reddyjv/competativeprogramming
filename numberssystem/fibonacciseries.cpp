@@ -31,3 +31,17 @@ int main()
         cin>>k;
     }
 }
+/* output
+
+enter position of fibonacci series
+15
+the fibonacci value of position 15 is 377
+
+press 1 to continue or press 0 to end
+1
+enter position of fibonacci series
+8
+the fibonacci value of position 8 is 13
+
+press 1 to continue or press 0 to end
+*/

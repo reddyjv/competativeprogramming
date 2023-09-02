@@ -37,5 +37,18 @@ int main(){
         }
 
     }
-    cout<<"the values are "<<"  "<<largest<<" "<<mul1<<" "<<mul2;
+    cout<<"the values are "<<"product\n"<<" "<<largest<<"\nmultipcand1\n"<<" "<<mul1<<"\nmultiplicand2\n"<<mul2;
 }
+/* output
+ enter the range
+enter lowest range
+100
+enter highest range
+10000
+the values are product
+ 99000099
+multipcand1
+ 9999
+multiplicand2
+990
+*/

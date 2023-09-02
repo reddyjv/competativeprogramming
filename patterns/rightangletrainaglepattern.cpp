@@ -18,3 +18,16 @@ int main()
     cin>>k;
     }
 }
+/*output
+enter number of rows
+7
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * * 
+* * * * * * * 
+tTo repeat again press 1
+ To end press 0
+*/

@@ -13,5 +13,11 @@ int main(){
         n=n>>1;
         i++;
     }
-    cout<<"answer in binary is"<<ans<<endl;
+    cout<<"answer in binary is "<<ans<<endl;
 }
+/*
+output
+enter decimal number
+18
+answer in binary is10010
+*/

@@ -21,3 +21,14 @@ int main()
     cin>>k;
     }
 }
+/* output
+enter number of rows
+5
+A 
+B C 
+D E F 
+G H I J 
+K L M N O 
+tTo repeat again press 1
+ To end press 0
+ */

@@ -14,7 +14,18 @@ int main()
         }
         cout<<'\n';
     }
-    cout<<"t\To repeat again press 1\n To end press 0"<<endl;
+    cout<<"t\ To repeat again press 1\n To end press 0"<<endl;
     cin>>k;
     }
 }
+/*output
+enter number of rows
+6
+* * * * * * 
+* * * * * * 
+* * * * * * 
+* * * * * * 
+* * * * * * 
+* * * * * * 
+tTo repeat again press 1
+ To end press 0         */
