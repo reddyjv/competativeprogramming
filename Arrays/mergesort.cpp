@@ -53,8 +53,9 @@ void mergesort(int array[],int const begin,int const end){
 void printarray(int a[],int size){
     for(int i=0;i<size;i++){
         cout<<a[i]<<" ";
-        cout<<endl;
+      
     }
+      cout<<endl;
 }
 int main(){
     int arr[]={12,11,6,3,99,76,51};
@@ -68,3 +69,12 @@ int main(){
 
 
 }
+/* output
+
+given array is
+12 11 6 3 99 76 51 
+
+ sorted array is
+
+3 6 11 12 51 76 99
+*/

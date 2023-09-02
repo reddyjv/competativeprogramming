@@ -25,6 +25,11 @@ int main(){
 int arr[]={12,11,13,78,65,99};
 int n=sizeof(arr)/sizeof(arr[0]);
 selectionsort(arr,n);
+cout<<"the sorted array is"<<endl;
 printarray(arr,n);
 return 0;
 }
+/*
+the sorted array is
+11 12 13 78 65 99 
+*/

@@ -27,3 +27,12 @@ int main()
          cout<<"key "<<key<<" is not found"<<endl;
     }
 }
+/* output
+enter number of elements
+5
+enter number of elements
+3 2 4 5 1
+enter key to be searched
+5
+key 5 is found
+*/

@@ -27,3 +27,17 @@ int main()
         cout<<a[i]<<" ";
     }
 }
+/* output
+
+enter the number of elemnts
+7
+enter the elements
+3
+2
+8
+7
+6
+4
+7
+the sorted elements are
+2 3 4 6 7 7 8 */

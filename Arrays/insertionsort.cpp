@@ -23,6 +23,11 @@ int main(){
 int arr[]={12,11,13,78,65,99};
 int n=sizeof(arr)/sizeof(arr[0]);
 insertionsort(arr,n);
+cout<<"sorted array is "<<endl;
 printarray(arr,n);
 return 0;
 }
+/* output
+sorted array is 
+11 12 13 65 78 99 
+*/

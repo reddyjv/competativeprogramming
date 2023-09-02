@@ -41,3 +41,21 @@ int main()
     cin>>k;
     }
 }
+/* output
+
+enter number of elements
+8
+enter the elements
+1
+2
+3
+4
+5
+6
+7
+8
+enter key to be searched
+8
+key is found
+press 1 to continue or 0 to exit
+*/
