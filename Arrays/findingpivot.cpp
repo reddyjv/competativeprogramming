@@ -5,7 +5,7 @@ int peakindex(int array[],int m){
     int e=m-1;
     int mid=s+(e-s)/2;
     while(s<e){
-        if(array[mid]>=array[mid+1]){
+        if(array[mid]>=array[0]){
             s=mid+1;
         }
         else{
