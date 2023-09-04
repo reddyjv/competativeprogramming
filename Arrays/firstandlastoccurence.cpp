@@ -58,3 +58,14 @@ int main(){
     cout<<"last occurence is in index  "<<lastocc(a,n,key)<<endl;
     return 0;
 }
+/* output
+enter number of elements
+7
+enter number of elements
+1 2 2 3 3 3 6
+enter key to be searched
+3
+first occurence is in index  3
+last occurence is in index  5
+total occurences=(last index-first index)+1
+*/
