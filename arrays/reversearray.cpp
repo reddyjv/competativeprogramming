@@ -20,3 +20,7 @@
     int n=6;
     reverse(arr,n);
  }
+ /* output
+ reversed array is
+ 9 8 7 2 4 3
+ */

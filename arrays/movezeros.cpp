@@ -1,4 +1,4 @@
- //code is pending
+ 
  #include<iostream>
  using namespace std;
  void movezeros(int arr[],int n){
@@ -7,7 +7,7 @@
         if(arr[j]!=0){
             int temp=arr[j];
             arr[j]=arr[nonzero];
-            arr[nonzero]=arr[j];
+            arr[nonzero]=temp;
             nonzero++;
         }
     }
@@ -21,3 +21,7 @@
     int n=7;
     movezeros(arr,n);
  }
+ /*
+ moved zeros  array is
+ 2 4 5 8 0 0 0
+ */

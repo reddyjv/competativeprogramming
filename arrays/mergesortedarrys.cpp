@@ -37,3 +37,7 @@
     int arr2[]={1,3,12,14};
     merge(arr1,5,arr2,4); 
  }
+ /* output
+ sorted array is
+ 1 2 3 4 5 12 13 14 78
+ */
