@@ -61,3 +61,9 @@ int main(){
     }
 
 }
+/* output
+
+enter string 
+Naan@$%aan
+given string is palindrome
+*/

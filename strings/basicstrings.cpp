@@ -1,5 +1,7 @@
 #include<iostream>
+#include<strings.h>
 using namespace std;
+
 bool checkpalindrome(char a[],int n){
     int s=0;
     int e=n-1;
@@ -39,7 +41,30 @@ int main(){
     cout<<"length : "<<len<<endl;
     reverse(name,len);
     cout<<"reversed naame is "<<name<<endl;
-    cout<<"palindrome or Not"<<checkpalindrome(name,len)<<endl;
+    cout<<"palindrome or Not:"<<checkpalindrome(name,len)<<endl;
     return 0; 
 
 }
+/* basic funnctions
+strcpy(dest,source);
+strcmp(str1,str2);
+strlen(str);
+
+*/
+
+
+/* output
+enter your name
+Aravind
+your name is Aravind
+length : 7
+reversed naame is dnivarA
+palindrome or Not:0
+
+enter your name
+ArarA
+your name is ArarA
+length : 5
+reversed naame is ArarA
+palindrome or Not:1
+*/
