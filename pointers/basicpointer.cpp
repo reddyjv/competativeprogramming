@@ -2,7 +2,7 @@
 order to keep track of of semantics of variables i.e. it stores information about the scope
 and binding information about names ,information about instances of various entities such
 aas variable and function names ,classes ,objects.etc
-
+note:symbol table content cannot be changed
 -> &(address of)
 */
 #include<iostream>
