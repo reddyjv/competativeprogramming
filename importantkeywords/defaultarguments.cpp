@@ -2,7 +2,7 @@
 using namespace std;
 void print(int arr[],int n,int start=1,string a="arvind"){ //default arguments should always be in right side
     for(int i=start;i<n;i++){//default arguments will take values if provided
-        cout<<arr[i]<<endl;  // otherwise continues with initialized value
+        cout<<arr[i]<<endl;  // otherwise continues with initialized value 
 
     }
     cout<<"string is "<<a<<endl;
