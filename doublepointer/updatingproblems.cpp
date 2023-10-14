@@ -21,6 +21,7 @@ int main(){
     cout<<p2<<endl;
 
 }
+//pending
 /* output
 case 1:
 before
