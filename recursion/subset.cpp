@@ -19,4 +19,4 @@ vector<vector<int>> subsets(vector<int>& nums){
     int index=0;
     solve(nums,output,index,ans);
     return ans;
-}
+}//
