@@ -3,7 +3,7 @@ using namespace std;
 class hero{
     //initially class data members will be private
 private: //only accessed in same class
-int level;  //garbage value initiallized initially
+int level;  //garbage value initiallized initiallyy
 public:
 int health;
 
