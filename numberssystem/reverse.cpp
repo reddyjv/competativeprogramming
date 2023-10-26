@@ -13,3 +13,8 @@ int main(){
    }
    cout<<"the reversed number is "<<rev<<endl;
 }
+/*output
+enter the number
+45897
+the reversed number is 79854
+*/
