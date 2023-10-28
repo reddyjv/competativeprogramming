@@ -28,3 +28,5 @@
           /*ouput
           speaking
 barking*/
+
+//abstraction means implementation hiding (know difference between encasulation and abstraction in stack overflow)
