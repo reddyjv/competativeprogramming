@@ -14,6 +14,14 @@ class Node{
         this->next=NULL;
 
     }
+    ~Node(){
+        int value=this->data;
+        if(this->next != NULL){
+            delete next;
+            this->next=NULL;
+        }
+        cout<<"memory is free for node with data "<<endl;
+    }
 };
 void insertathead(Node* &head,int d){
     //new node creation
@@ -38,6 +46,31 @@ void inseratposition(Node* &head,int position,int d){
     temp->next=nodetoinsert;
 
 }
+void deleteNode(int position,Node* &head){
+    //deleting first or start node
+    if(position==1){
+        Node* temp=head;
+        head=head->next;
+        //memory free start node
+        temp->next=NULL;
+        delete temp;
+    }
+    else{
+        Node* curr=head;
+        Node* prev=NULL;
+        int cnt=1;
+        while(cnt<position){
+            prev=curr;
+            curr=curr->next;
+            cnt++;
+        }
+        prev->next=curr->next;
+        curr->next=NULL;
+        delete curr;
+        //deleting is for homework
+
+    }
+}
 void print(Node* &head){
     Node* temp=head;
     while(temp!=NULL){
@@ -55,13 +88,28 @@ int main(){
     Node* head=node1;
     print(head);
     insertathead(head,12);
+    insertathead(head,1);
+    insertathead(head,16);
+    insertathead(head,17);
+    insertathead(head,11);
     print(head);
     Node* tail=node1;
+    deleteNode(1,head);
+    print(head);
     //insertattail(head,10); (homework)
-    print(head);
+   // print(head);
    // insertattail(head,12);
-    print(head);
+   // print(head);
+
 
     return 0;
 }
+/*output
+10
+0
+10 
+11 17 16 1 12 10 
+memory is free for node with data 
+17 16 1 12 10 
+*/
 
