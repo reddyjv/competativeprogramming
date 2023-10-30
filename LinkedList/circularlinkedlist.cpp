@@ -25,12 +25,12 @@ void insertnode(Node* &tail,int element,int d){
     tail=newnode;
     newnode->next=newnode;
     }
-    elsse
+    else
     {
         //non-empty list
         //assuming that the element is present in the list
         Node* curr=tail;
-        while (curr->data!=NULL){
+        while (curr->data!=element){
             curr=curr->next;
         }
       Node* temp=new Node(d);
@@ -41,20 +41,80 @@ void insertnode(Node* &tail,int element,int d){
 }
 void print(Node* tail){
     Node* temp=tail;
+    if(tail==NULL){
+        cout<<"List is empty"<<endl;
+    }
+    
+    
     do{
         cout<<tail->data<<" ";
         tail=tail->next;
 
     }while(tail!=temp);
+    cout<<endl;
 
+}
+void deletenode(Node* &tail,int value){
+    //emppty list
+    if(tail==NULL){
+        cout<<"List is empty,please check again"<<endl;
+        return;
+    }
+    else{
+        //non-empty
+        //assuming the "value" is present in the Linkedlist
+        Node* prev=tail;
+        Node* curr=prev->next;
+        while(curr->data!=value){
+            prev=curr;
+            curr=curr->next;
+        }
+        prev->next=curr->next;
+        if(tail==prev){
+            tail=NULL;
+        }
+        else if(tail==curr){
+            tail=prev;
+        }
+        curr->next=NULL;
+        delete curr;
+    }
 }
 int main(){
     Node* tail=NULL;
-    insertnode(tail,5,3);
+    insertnode(tail,10,3);
     print(tail);
      insertnode(tail,3,5);
     print(tail);
-     insertnode(tail,5,7);
+       insertnode(tail,5,9);
     print(tail);
+       insertnode(tail,9,10);
+    print(tail);
+       insertnode(tail,10,11);
+    print(tail);
+       insertnode(tail,11,8);
+    print(tail);
+    deletenode(tail,9);
+    print(tail);
+      deletenode(tail,11);
+    print(tail);
+      deletenode(tail,8);
+    print(tail);
+   
 
 }
+/*output
+
+3 
+3 5 
+3 5 9 
+3 5 9 10 
+3 5 9 10 11 
+3 5 9 10 11 8 
+memory is free for node with data 9
+3 5 10 11 8 
+memory is free for node with data 11
+3 5 10 8 
+memory is free for node with data 8
+3 5 10 
+*/

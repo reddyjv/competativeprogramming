@@ -115,5 +115,20 @@ int main(){
     print(head);
     deletenode(6,head);
     print(head);
+     deletenode(2,head);
+    print(head);
     return 0;
 }
+/*output
+10 
+1
+11 10 
+13 11 10 
+8 13 11 10 
+25 8 13 11 10 
+25 100 8 13 11 10 
+memory free for node with data10
+25 100 8 13 11 
+memory free for node with data100
+25 8 13 11 
+*/
