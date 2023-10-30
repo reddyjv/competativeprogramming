@@ -74,52 +74,50 @@ void print(Node* &head){
         temp=temp->next;
     }
     cout<<endl;
-
 }
-void reverse(Node* &head,Node* curr,Node* prev){
-    //base case
-    if(curr==NULL){
-        head=prev;
-        return;
+int getlength(Node* head){
+    int len=0;
+    while(head!=NULL){
+        len++;
+        head=head->next;
     }
-    Node* forward=curr->next;
-    reverse(head,forward,curr);
-    curr->next=prev;
+    return len;
 }
-Node* rev(Node* head){
-    Node* curr=head;
-    Node* prev=NULL;
-    reverse(head,curr,prev);
+Node* findmiddle(Node* head){
+    int len=getlength(head);
+    int ans=(len/2);
+    Node* temp=head;
+    int cnt=0;
+    while(cnt<ans){
+    temp=temp->next;
+    cnt++;
+    }
+    return temp;   /*T C=O(n)+O(n/2)
+                     =O(n)+O(n/2)
+                     =2 O(n)
+                     =O(n)
+                     */
+}
+Node* getmiddle(Node* head){
+    if(head==NULL || head->next)
     return head;
-}
-Node* reverseLinkedlist(Node* head){
-    if(head==NULL || head->next==NULL){
-        return head;
+    //2 nodes - needed or not?
+    if(head->next->next==NULL){
+        return head->next;
     }
-    Node* prev=NULL;
-    Node* curr=head;
-    Node* forward=NULL;
-    while(curr!=NULL){
-        forward=curr->next;
-        curr->next=prev;
-        prev=curr;
-        curr=forward;
+    Node* slow=head;
+    Node* fast=head->next;
+    while(fast!=NULL){
+        fast=fast->next;
+        if(fast!=NULL){
+            fast=fast->next;
+        }
+           slow=slow->next;
     }
-    return prev;
+    return slow;
+ 
 }
 
-Node* reverse1(Node* head){
-    //base case
-    if(head==NULL || head->next==NULL){
-        return head;
-    }
-    Node* chotahead=reverse1(head->next);
-    head->next->next=head;
-    head->next=NULL;
-
-    return chotahead;
-
-}
 int main(){
     //created a new node
     Node* node1=new Node(10);
@@ -137,20 +135,12 @@ int main(){
     Node* tail=node1;
     deleteNode(1,head);
     print(head);
-   Node* h=reverse1(head);
-   print(h);
-  Node* k=reverseLinkedlist(h);//T C=o(n)   sc =(1)
-    print(k);
-    Node* f=rev(k);
-    print(f);
-  
+    Node* k=getmiddle(head);
+    cout<<k->data<<endl;
+      Node* h=getmiddle(head);
+    cout<<h->data<<endl;
 
- 
-
-
-    return 0;
 }
-//do reverse for doubly linked list
 /*output
 10
 0
@@ -158,7 +148,6 @@ int main(){
 11 17 16 1 12 10 
 memory is free for node with data 
 17 16 1 12 10 
-10 12 1 16 17 
-17 16 1 12 10 
-10 12 1 16 17
+17
+17
 */
