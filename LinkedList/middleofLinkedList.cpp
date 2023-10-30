@@ -114,7 +114,8 @@ Node* getmiddle(Node* head){
         }
            slow=slow->next;
     }
-    return slow;
+    return slow; //TC=O(n/2)->O(n)
+                 //SC=O(1)
  
 }
 
